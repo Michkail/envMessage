@@ -6,5 +6,15 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "centrifuge-python>=0.3.0",
+    "dependency-injector>=4.42.0",
     "fastapi>=0.115.0",
+    "loguru>=0.7.2",
+    "pydantic-settings>=2.5.2",
+    "python-decouple>=3.8",
+    "python-jose>=3.3.0",
+    "pytz>=2024.2",
+    "sqlalchemy>=2.0.35",
+    "sqlmodel>=0.0.22",
+    "uvicorn>=0.31.0",
+    "wheel>=0.44.0",
 ]
