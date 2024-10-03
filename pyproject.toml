@@ -1,0 +1,10 @@
+[project]
+name = "envmessage"
+version = "0.1.0"
+description = "This is a sample of real-time chat and chatbot w/ machine learning"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "centrifuge-python>=0.3.0",
+    "fastapi>=0.115.0",
+]
