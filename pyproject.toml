@@ -5,10 +5,14 @@ description = "This is a sample of real-time chat and chatbot w/ machine learnin
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "alembic>=1.13.3",
+    "bcrypt>=4.2.0",
     "centrifuge-python>=0.3.0",
     "dependency-injector>=4.42.0",
     "fastapi>=0.115.0",
     "loguru>=0.7.2",
+    "passlib>=1.7.4",
+    "psycopg2>=2.9.9",
     "pydantic-settings>=2.5.2",
     "python-decouple>=3.8",
     "python-jose>=3.3.0",

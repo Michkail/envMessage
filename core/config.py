@@ -1,5 +1,5 @@
 import os
-from typing import List
+from typing import List, ClassVar
 from pydantic_settings import BaseSettings
 from decouple import config
 
@@ -47,7 +47,7 @@ class Configs(BaseSettings):
 
     DATABASE_URI_FORMAT: str = "{db_engine}://{user}:{password}@{host}:{port}/{database}"
 
-    DATABASE_URI = "{db_engine}://{user}:{password}@{host}:{port}/{database}".format(
+    DATABASE_URI: ClassVar[str] = "{db_engine}://{user}:{password}@{host}:{port}/{database}".format(
         db_engine=DB_ENGINE,
         user=DB_USER,
         password=DB_PASSWORD,
@@ -57,9 +57,9 @@ class Configs(BaseSettings):
     )
 
     # find query
-    PAGE = 1
-    PAGE_SIZE = 20
-    ORDERING = "-id"
+    PAGE: int = 1
+    PAGE_SIZE: int = 20
+    ORDERING: str = "-id"
 
     class Config:
         case_sensitive = True
